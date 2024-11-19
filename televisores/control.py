@@ -11,7 +11,7 @@ class Control:
 
     def enlazar(self, tv):
         self.tv = tv
-        tv.setControl(self)
+        self.tv.setControl(self)
 
     def turnOn(self):
         self.tv.estado = True
