@@ -20,7 +20,7 @@ class TV:
         return self.canal
     
     def setCanal(self, canal):
-        if self.estado and canal >= 1 and canal <+ 120:
+        if self.estado and canal >= 1 and canal <= 120:
             self.canal = canal
 
     def getPrecio(self):
@@ -40,7 +40,7 @@ class TV:
         return self.__control
     
     def setControl(self, control):
-        self.control = control
+        self.__control = control
 
     def getNumTv():
         return TV.numTV
